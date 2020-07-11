@@ -13,7 +13,8 @@ var usuarioSchema = new Schema({
     email: { type: String, unique: true, required: [true, 'email Obligatorio'] },
     password: { type: String, required: [true, 'password Obligatorio'] },
     img: { type: String, required: false },
-    role: { type: String, required: true, default: 'USER_ROLE', enum: roleValid }
+    role: { type: String, required: true, default: 'USER_ROLE', enum: roleValid },
+    google: { type: Boolean, required: true, default: false }
 });
 
 //decir a moonges que en este esquema estará uniqueValidator
