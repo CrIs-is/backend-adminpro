@@ -49,7 +49,7 @@ app.get('/', (req, res, next) => {
 
 
 //CREAR UN NUEVO USUARIO
-app.post('/', mdAutentication.verifyToken, (req, res) => {
+app.post('/', (req, res) => {
 
     var body = req.body;
 
